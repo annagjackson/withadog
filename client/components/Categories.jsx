@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export default React.createClass({
 
@@ -7,11 +8,11 @@ export default React.createClass({
 
       <div className='categories'>
         <ul>
-          <li className='selected'><a href='/listing.html'>Wombles</a></li>
+          <li className='selected'><Link to='/listing'>Wombles</Link></li>
           {this.props.categories.map(category => {
-            <li><a href='#'
+            <li><Link to='#'
               className={this.props.selected ? 'selected' : ''}
-              onClick={() => this.props.navigateTo(category)}>category</a></li>
+              onClick={() => this.props.navigateTo(category)}>category</Link></li>
           })}
         </ul>
       </div>
