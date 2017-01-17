@@ -9,21 +9,19 @@ export default React.createClass({
   render () {
     let active = <Home />
 
-        if (this.props.pageState.activePage === 'listing') {
-          active = <ProductListing />
-        }
+    if (this.props.pageState.activePage === 'listing') {
+      active = <ProductListing />
+    }
 
-        if (this.props.pageState.activePage === 'details') {
-          active = <ProductDetails />
-          }
-
+    if (this.props.pageState.activePage === 'details') {
+      active = <ProductDetails />
+    }
 
     return (
-    <div className="content">
-      <Categories categories={this.props.products.categories.map(category => category.name)} />
+      <div className='content'>
+        <Categories categories={this.props.products.categories.map(category => category.name)} />
         { active }
-    </div>
-
+      </div>
     )
   }
 })
