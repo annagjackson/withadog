@@ -1,4 +1,10 @@
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
 
+p {
+  font-family: 'Slabo 27px', serif;
+}
 .categories {
   border-style: dashed;
   border-color: blue;
@@ -15,7 +21,6 @@
   border-style: dashed;
   border-color: blue;
   border-width: thin;
-  background-color: red;
 }
 
 .home {

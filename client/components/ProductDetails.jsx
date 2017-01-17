@@ -5,9 +5,12 @@ export default React.createClass({
 
   render () {
     return (
-    <div class="col-md-8">
-      <h3>Product Details</h3>
-    </div>
+      <div className='product-details'>
+          <Nav history={['home', this.props.category]} />
+          <h2>{this.props.name}</h2>
+          <p className='product-image'><img src='{this.props.image}' /></p>
+          <p>{this.props.description}</p>
+        </div>
     )
   }
 })

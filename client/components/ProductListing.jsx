@@ -5,8 +5,16 @@ export default React.createClass({
 
   render () {
     return (
-    <div class="col-md-8">
-      <h3>Product Listing</h3>
+      <div className='product-listing'>
+              <Nav history={['home']} />
+              <h2>Wombles</h2>
+              <p>Select a creature in the list below to see its details.</p>
+              <ul>
+                {this.props.products.map(product => {
+                  return <li><a href='#'
+                    onClick={() => this.props.navigateTo('details', product.category)}>{product.name}</a></li>
+                })}
+              </ul>
     </div>
 
     )
