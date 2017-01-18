@@ -34,4 +34,15 @@ Week One: User stories, Wireframes, HTML, CSS
 Week Two: Data model, site API, using GoogleMaps API
 Week Three: Working app
 
-## Milestones
+## User stories
+
+1. Find park or beach where I can walk my dog. Search by location (user enters location).
+2. Find park or beach where I can walk my dog. Geolocated search (app detects location and provides nearby sites)
+3. Find park or beach where I can walk my dog. Search by features.
+4. See details about park/beach:
+    - pictures from location
+    - description of location
+    - key features
+    - user ratings
+    - council regulations
+    - hazards
