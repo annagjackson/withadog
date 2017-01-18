@@ -1,13 +1,15 @@
 import React from 'react'
+import Nav from './Nav'
+import Homelogo from './Homelogo'
 
 export default React.createClass({
 
   render () {
     return (
-      <div className='row'>
-        <div className='header'>
-          <h1>WOMBLES</h1>
-        </div>
+      <div>
+        <Homelogo />
+        <h1>WITH A DOG</h1>
+        <Nav />
       </div>
     )
   }
