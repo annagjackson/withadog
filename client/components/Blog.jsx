@@ -1,12 +1,9 @@
 import React from 'react'
 
-export default React.createClass({
-  render () {
-    return (
-      <div className='blog'>
-        <h3>DOG BLOG</h3>
-      </div>
-
+const Blog = () => (
+  <div className='about'>
+    <h3>Blog</h3>
+  </div>
     )
-  }
-})
+
+export default Blog

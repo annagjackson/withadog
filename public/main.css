@@ -1,48 +1,40 @@
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', sans-serif;
+/*.container{
+  display: flex;
+  flex-flow: row wrap;*/
+
+
+
+  h1, h2, h3, h4, p{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-p {
-  font-family: 'Slabo 27px', serif;
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  float: left;
 }
-.categories {
+.logo-text {
+  text-align: right;
+  float:right;
+}
+.header {
+  border-style: dashed;
+  border-color: blue;
+  border-width: thin;
+
+}
+.home {
   border-style: dashed;
   border-color: blue;
   border-width: thin;
 }
-
 .footer {
   border-style: dashed;
   border-color: blue;
   border-width: thin;
 }
 
-.header {
-  border-style: dashed;
-  border-color: blue;
-  border-width: thin;
-}
-
-.home {
-  border-style: dashed;
-  border-color: blue;
-  border-width: thin;
-}
-
-.nav, h3 {
-  border-style: dashed;
-  padding-top: 5px;
-
-}
-
-.product-listing {
-  border-style: dashed;
-  border-color: blue;
-  border-width: thin;
-}
-
-.product-details {
-  border-style: dashed;
-  border-color: blue;
-  border-width: thin;
+.nav{
+  text-align: right;
 }

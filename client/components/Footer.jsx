@@ -1,12 +1,9 @@
 import React from 'react'
 
-export default React.createClass({
-  render () {
-    return (
-      <div className='footer'>
-        <h3>This is a footer</h3>
-      </div>
-
+const Footer = () => (
+  <div className='footer'>
+    <h3>Footer</h3>
+  </div>
     )
-  }
-})
+
+export default Footer

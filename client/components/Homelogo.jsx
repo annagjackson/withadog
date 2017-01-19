@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-export default React.createClass({
-  render () {
-    return (
-      <div className='home-logo'>
-        <Link to='/'>Home</Link>
-      </div>
+const Homelogo = () => (
+  <div className='home-logo'>
+    <div>
+      <p className='logo-image'></p>
+      < Link to='/'><img src={'images/doglogo.png'}
+    /> </ Link >
+    <div className='logo-text'>
+    <h1>WITH A DOG</h1>
+    </div>
+    </div>
+  </div>
+  )
 
-    )
-  }
-})
+export default Homelogo
