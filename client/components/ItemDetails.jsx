@@ -18,13 +18,11 @@ export default React.createClass({
 
   render () {
     const filteredItems = this.state.items.filter(item => {
-      return item.categoryId === Number(this.props.params.id)
+      return item.id === Number(this.props.params.id)
     })
-    // const filteredUsersItems = this.state.items.filter(item => {
-    //   return item.userId === Number(this.props.params.id)
-    // })
+
     return (
-      <div className='display-items'>
+      <div className='item-details'>
                 <div className="card-deck content">
                 {filteredItems.map(item => {
                   return (
@@ -32,9 +30,9 @@ export default React.createClass({
                       <div className="card-block">
                         <p className="card-text">{item.name}</p>
                       </div>
-                      <img src={item.image} alt="Card image" width='300px' />
+                      <img src={item.image} alt="Card image" width='500px' />
                       <div className="card-block">
-                        <p className="card-text"><Link to={`/details/${item.id}`}> See details...</Link></p>
+                        <p className="card-text">{item.detail}</p>
                       </div>
                     </div>
 

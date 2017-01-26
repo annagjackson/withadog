@@ -9,14 +9,7 @@ body {
 .container-fluid{
   background-color: #f5f5f5;
 }
-.logo-image {
-  width: 40px;
-  height: 40px;
-  float: left;
-}
-.logo-text {
-  text-align: right;
-}
+
 .header {
   width: 100%;
   Height: 400px;
@@ -40,11 +33,11 @@ body {
   font-size: 60px;
 }
 
-
 .home {
   padding-top: 5%;
   width: 100%;
 }
+
 
 .nav{
   padding-top: 5px;
@@ -64,6 +57,10 @@ body {
 }
 nav flex-column {
 text-align: left;
+}
+.display-items{
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .footer {

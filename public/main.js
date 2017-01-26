@@ -27,14 +27,6 @@ export default StyleSheet.create({
     "container-fluid": {
         "backgroundColor": "#f5f5f5"
     },
-    "logo-image": {
-        "width": 40,
-        "height": 40,
-        "float": "left"
-    },
-    "logo-text": {
-        "textAlign": "right"
-    },
     "header": {
         "width": "100%",
         "height": 400,
@@ -80,6 +72,10 @@ export default StyleSheet.create({
     },
     "nav flex-column": {
         "textAlign": "left"
+    },
+    "display-items": {
+        "paddingTop": "5%",
+        "paddingBottom": "5%"
     },
     "footer": {
         "position": "sticky",

@@ -8,7 +8,7 @@ export default React.createClass({
         <h3>Things to do</h3>
         <nav className="d-flex flex-column">
          {this.props.categories.map( category => {
-           return (<a className="p-2" key={category.id}><Link to = {`/categories/${category.id}`}>{category.name}</Link></a>)
+           return (<Link to={`/categories/${category.id}`} className="p-2" key={category.id}>{category.name}</Link>)
          } )}
         </nav>
       </div>

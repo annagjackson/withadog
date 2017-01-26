@@ -7,6 +7,7 @@ import Home from './components/Home'
 import About from './components/About'
 import DisplayItems from './components/DisplayItems'
 import Content from './components/Content'
+import ItemDetails from './components/ItemDetails'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
@@ -15,9 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <Route component = { Content } >
             <IndexRoute component={ Home } />
           <Route path='about' component={ About } />
-          <Route path='categories/:id' component = { DisplayItems }/>
+          <Route path='categories/:id' component={ DisplayItems }/>
+          <Route path='details/:id' component={ ItemDetails} />
           </Route>
-      </Route>
+        </Route>
     </Router>
     ),
     document.getElementById('app')
